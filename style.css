@@ -10,39 +10,47 @@ body {
 
 .nav {
   border: solid black 10px;
+  width: 100%
   display: flex;
-  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-direction: row;
 }
 
-.top-title {
-  border: 5px solid purple;
-  font-size: 2rem;
-  justify-content: center;
+.img-and-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
   border: solid 4px blueviolet;
   border-radius: 1rem 1rem 1rem 1rem;
+  
 }
 
-ul {
- 
-  list-style: none;
-  text-align: left;
-  border: solid green;
-  margin: 0;
+.top-title {
   display: flex;
-  flex-direction: row;
+  flex-grow: 1;
+  border: 5px solid purple;
+  font-size: 1.5rem;
+  align-items: right;
+}
+
+.nav-album-links {
+  text-decoration: none;
+  border: solid green;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 1;
+  margin: 0.3rem;
+  color: black;
+  width: 100%
 }
 
 
-h2 {
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  color: yellow;
-  text-shadow: 0.2rem 0.2rem black;
-}
+
