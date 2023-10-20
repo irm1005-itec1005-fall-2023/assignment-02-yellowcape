@@ -49,6 +49,21 @@ body {
 .first-chunk {
   border: solid black;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
 }
 
+.ranking {
+  width: 40%;
+  padding: 0.3rem;
+  border: red solid;
+  height: fit-content;
+}
 
+.streaming-data {
+  width: 40%;
+  padding: 0.3rem;
+}
