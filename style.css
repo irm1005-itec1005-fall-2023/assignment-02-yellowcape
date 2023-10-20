@@ -9,48 +9,46 @@ body {
 }
 
 .nav {
-  border: solid black 10px;
-  width: 100%
   display: flex;
   flex-grow: 1;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-and-title {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  align-items: center;
 }
 
 .logo {
   width: 6rem;
   height: 6rem;
-  border: solid 4px blueviolet;
+  border: 1rem;
   border-radius: 1rem 1rem 1rem 1rem;
-  
+  margin: 1rem;
 }
 
 .top-title {
   display: flex;
   flex-grow: 1;
-  border: 5px solid purple;
   font-size: 1.5rem;
-  align-items: right;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav-album-links {
-  text-decoration: none;
-  border: solid green;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 1;
-  margin: 0.3rem;
-  color: black;
-  width: 100%
+  justify-content: space-around;
 }
 
+.first-chunk {
+  border: solid black;
+  display: flex;
+}
 
 
