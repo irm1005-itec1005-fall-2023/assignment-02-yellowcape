@@ -59,7 +59,7 @@ body {
 }
 
 .streaming-data {
-  width: 40%;
+  width: 45%;
   border: blueviolet solid;
 
 }
@@ -83,6 +83,7 @@ body {
   border: blue solid;
   text-align: left;
   justify-content: center;
+  align-items: center;
 }
 
 .fearless-doc-img {
@@ -91,6 +92,34 @@ body {
 
 .speak-now-doc-img {
   width: 100%;
-  align-items: center;
+}
+
+ol {
+  list-style: none;
+  text-align: left;
+}
+
+.doc-one-and-two > h2 {
+  text-align: center;
+}
+
+.doc-three-to-seven {
+  border: solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 2rem 0 2rem;
+}
+
+._1989-doc {
+ 
+}
+
+
+
+.folklore-doc-img {
+  border: solid snow;
+  width: 30%;
 }
 
