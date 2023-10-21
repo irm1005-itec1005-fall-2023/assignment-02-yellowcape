@@ -99,41 +99,27 @@ ol {
   text-align: center;
 }
 
-.doc-three-to-seven {
-  border: solid rgb(199, 4, 4);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-  margin: 0 2rem 0 2rem;
+.doc-three-to-six {
+  border: solid #B2ECFFff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 ._1989-doc {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
   overflow-wrap: break-word;
-  border: solid greenyellow;
+  border: solid #B2ECFFff;  
   text-align: left;
-  width: 20%
 }
 
 ._1989-doc-img{
   display: flex;
-  flex-direction: column;
   width: 50%;
 }
 
 .rep-doc {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-  border: solid blue;
+  border: solid #B2ECFFff;
   text-align: left;
-  width: 20%
 }
 
 .rep-doc-img{
@@ -142,32 +128,9 @@ ol {
   width: 50%;
 }
 
-.miss-americana-doc {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-  border: solid rebeccapurple;
-  text-align: left;
-  width: 20%
-}
-
-.miss-americana-doc-img{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
 .lover-doc {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-  border: solid pink;
+  border: solid #B2ECFFff;
   text-align: left;
-  width: 20%
 }
 
 .lover-doc-img{
@@ -177,18 +140,22 @@ ol {
 }
 
 .folklore-doc {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-  border: solid grey;
+  border: solid #B2ECFFff;
   text-align: left;
-  width: 20%
 }
 
 .folklore-doc-img{
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.miss-americana-doc {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.miss-americana-doc-img{
   width: 50%;
 }
