@@ -51,8 +51,6 @@ body {
 .first-chunk {
   border: solid black;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   margin: 0 2rem 0 2rem;
@@ -61,7 +59,6 @@ body {
 .streaming-data {
   width: 45%;
   border: blueviolet solid;
-
 }
 
 .first-chunk-nest {
@@ -73,7 +70,6 @@ body {
 }
 
 .ranking {
-  padding: 0.3rem;
   border: red solid;
   height: fit-content;
   text-align: left;
@@ -104,22 +100,95 @@ ol {
 }
 
 .doc-three-to-seven {
-  border: solid black;
+  border: solid rgb(199, 4, 4);
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   margin: 0 2rem 0 2rem;
 }
 
 ._1989-doc {
- 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  border: solid greenyellow;
+  text-align: left;
+  width: 20%
 }
 
-
-
-.folklore-doc-img {
-  border: solid snow;
-  width: 30%;
+._1989-doc-img{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
+.rep-doc {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  border: solid blue;
+  text-align: left;
+  width: 20%
+}
+
+.rep-doc-img{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.miss-americana-doc {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  border: solid rebeccapurple;
+  text-align: left;
+  width: 20%
+}
+
+.miss-americana-doc-img{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.lover-doc {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  border: solid pink;
+  text-align: left;
+  width: 20%
+}
+
+.lover-doc-img{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.folklore-doc {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  border: solid grey;
+  text-align: left;
+  width: 20%
+}
+
+.folklore-doc-img{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
