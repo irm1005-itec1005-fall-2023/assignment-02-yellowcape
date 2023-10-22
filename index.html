@@ -164,93 +164,101 @@
        </section>
 
        <section>
-        <h2>Which album is your favourite?</h2>
-        <form action="#">
-          <fieldset>
-            <legend>Stay up to date on all the Swiftie news via our weekly newsletter!</legend>
-             <label for="album">Album</label>
-              <select name="albums" id="album">
-               <option value="Taylor Swift">Taylor Swift/Debut</option>
-               <option value="Fearless TV">Fearless - Taylor's Version</option>
-               <option value="Speak Now TV">Speak Now - Taylor's Version</option>
-               <option value="Red TV">Red - Taylor's Version</option>
-               <option value="1989">1989</option>
-               <option value="Reputation">reputation</option>
-               <option value="Lover">Lover</option>
-               <option value="Folklore">Folklore</option>
-               <option value="Evermore">Evermore</option>
-               <option value="Midnights">Midnights</option>
-              </select>
-          </fieldset>
+        <div cla="whole-form">
+          <h2 class="form-title">Which album is your favourite?</h2>
+            <form action="#">
+              <fieldset>
+                <legend>Stay up to date on all the Swiftie news via our weekly newsletter!</legend>
+                <label for="album">Album</label>
+                  <select name="albums" id="album">
+                  <option value="Taylor Swift">Taylor Swift/Debut</option>
+                  <option value="Fearless TV">Fearless - Taylor's Version</option>
+                  <option value="Speak Now TV">Speak Now - Taylor's Version</option>
+                  <option value="Red TV">Red - Taylor's Version</option>
+                  <option value="1989">1989</option>
+                  <option value="Reputation">reputation</option>
+                  <option value="Lover">Lover</option>
+                  <option value="Folklore">Folklore</option>
+                  <option value="Evermore">Evermore</option>
+                  <option value="Midnights">Midnights</option>
+                  </select>
+              </fieldset>
 
-          <fieldset>
-          <label for="email">Email</label>
-           <input
-            autocomplete="email"
-            required
-            type="email"
-            id="email"
-            placeholder="taylorallisonswift13@swiftieland.com" />
-           
-          <label for="name">Name</label>
-            <input
-            autocomplete="name"
-            id="name"
-            type="text"
-            placeholder="Taylor" />
+              <fieldset>
+              <label for="email">Email</label>
+              <input
+                autocomplete="email"
+                required
+                type="email"
+                id="email"
+                placeholder="taylorallisonswift13@swiftieland.com" />
+              
+              <label for="name">Name</label>
+                <input
+                autocomplete="name"
+                id="name"
+                type="text"
+                placeholder="Taylor" />
 
-          <label for="tel">Phone Number</label>
-            <input
-             autocomplete="tel"
-             id="tel"
-             type="tel"
-             placeholder="1312198913" />
-          </fieldset>
+              <label for="tel">Phone Number</label>
+                <input
+                autocomplete="tel"
+                id="tel"
+                type="tel"
+                placeholder="1312198913" />
+              </fieldset>
 
-          <button type="submit">Submit your choice and register for our newsletter</button>
-        </form>
+              <button type="submit">Submit your choice and register for our newsletter</button>
+          </form>
+        </div>
        </section>
       </main>
 
       <section>
       <footer>
-        <h2>Ranked - Taylor's Version</h2>
-        <nav>
-          <h3>The Albums</h3>
-          <ul>
-            <li><a href="#">Taylor Swift</a></li>
-            <li><a href="#">Fearless - TV</a></li>
-            <li><a href="#">Speak Now - TV</a></li>
-            <li><a href="#">Red - TV</a></li>
-            <li><a href="#">1989</a></li>
-            <li><a href="#">Reputation</a></li>
-            <li><a href="#">Lover</a></li>
-            <li><a href="#">Folklore</a></li>
-            <li><a href="#">Evermore</a></li>
-            <li><a href="#">Midnights</a></li>
-          </ul>
-        </nav>
+        <div class="footer-grid">
+
+          <div class="ranked-title-and-albums-nav">
+            <h2 class="footer-title">Ranked - Taylor's Version</h2>
+            <nav>
+              <div class="footer-albums">
+              <h3>The Albums</h3>
+              <ul>
+                <li><a href="#">Taylor Swift</a></li>
+                <li><a href="#">Fearless - TV</a></li>
+                <li><a href="#">Speak Now - TV</a></li>
+                <li><a href="#">Red - TV</a></li>
+                <li><a href="#">1989</a></li>
+                <li><a href="#">Reputation</a></li>
+                <li><a href="#">Lover</a></li>
+                <li><a href="#">Folklore</a></li>
+                <li><a href="#">Evermore</a></li>
+                <li><a href="#">Midnights</a></li>
+              </ul>
+            </div>
+            </nav>
+         </div>
 
         <div class="container">
 
           <div class="content">
-            <p>Ready to be back in Style?!</p>
+            <p>Are you to be back in Style?!</p>
             <h2><span>1989 Taylor's Version</span> Coming Soon ...</h2>
             <div class="_1989-taylors-version-timer">
               <div>
-                <p>00</p>
+                <p id="days">00</p>
                 <span>Days</span>
               </div>
               <div>
-                <p>00</p>
+                <p id="hours">00</p>
                 <span>Hours</span>
               </div>
               <div>
-                <p>00</p>
+                <p id="minutes">00</p>
                 <span>Minutes</span>
               </div>
               <div>
-                <p>00</p>
+                <p id="seconds">00</p>
                 <span>Seconds</span>
               </div>
             </div>
@@ -262,12 +270,26 @@
             var now = new Date().getTime();
             var distance = countDownDate -now;
 
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24))
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 *60));
-            var Minutes = Math.floor ((distance % (100 * 60 *60)) / (1000 * 60));
+            var Days = Math.floor(distance / (1000 * 60 * 60 * 24))
+            var Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 *60));
+            var Minutes = Math.floor((distance % (100 * 60 *60)) / (1000 * 60));
+            var Seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+            document.getElementById("days").innerHTML = Days;
+            document.getElementById("hours").innerHTML = Hours;
+            document.getElementById("minutes").innerHTML = Minutes;
+            document.getElementById("seconds").innerHTML = Seconds;
+
+            if(distance < 0){
+              clearInterval(x);
+              document.getElementById("days").innerHTML = "00";
+             document.getElementById("hours").innerHTML = "00";
+             document.getElementById("minutes").innerHTML = "00";
+             document.getElementById("seconds").innerHTML = "00";
+            }
           },1000); 
         </script>
+        </div>
       </footer>
     </section>
     <!--
