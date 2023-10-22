@@ -63,6 +63,7 @@ body {
 
   .first-chunk {
     display: flex;
+    flex-direction: row;
     align-self: center;
     justify-content: space-between;
     text-align: center;
@@ -80,7 +81,7 @@ body {
       padding: 0.5rem;
       color: white;
       border-radius: 0.5rem;
-      margin-top: 3rem;
+      margin-top: 7rem;
     }
 
         h1 {
@@ -102,9 +103,10 @@ body {
         }
 
         .doc-1-and-2-title {
-          color: rgb(139, 55, 194);
+          color: rgb(66, 5, 106);
           border: dotted 7px #B04EF2ff;
           padding: 1.5rem;
+          margin-top: 7rem;
         }
 
           .fearless-doc-img {
@@ -172,10 +174,16 @@ body {
         }
 
   .streaming-data {
-    width: 30%;
+    width: 40%;
     color: rgb(66, 5, 106);
     padding-left: 2rem;
-    margin-top: 8rem;
+    margin-top: 3rem;
+  }
+
+  .stream-title {
+    color: rgb(66, 5, 106);
+          border: dotted 7px #B04EF2ff;
+          padding: 1.5rem;
   }
 
     caption {
@@ -185,6 +193,13 @@ body {
     table, th, td {
       border: solid #B04EF2ff;
       color: rgb(66, 5, 106);
+      width: 100%;
+    }
+
+  .records-section {
+    color: rgb(66, 5, 106);
+    border: dotted 7px #B04EF2ff;
+    padding: 1.5rem;
     }
 
 .doc-three-to-six {
@@ -365,6 +380,8 @@ form {
   align-items: center;
   text-align: center;
   border: none;
+  color: #B2ECFFff;
+  font-weight: 600;
 
   }
 
@@ -372,6 +389,8 @@ form {
     width: 75%;
     text-align: center;
     margin: 3rem auto 1rem;
+    color: #B2ECFFff;
+  font-weight: 600;
   }
 
   fieldset {
@@ -384,14 +403,16 @@ form {
 
 
 
-
+footer {
+  margin-bottom: 3rem;
+}
 
 .footer-grid {
   display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 25%;
-      margin-top: 3rem;
+    column-gap: 15%;
+      margin-top: 5rem;
       margin-left: 25%;
       margin-right: 25%;
 
@@ -402,11 +423,17 @@ form {
       flex-grow: 1;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
     color: #B2ECFFff;
         border: dotted 10px #B2ECFFff;
-        padding: 1.5rem;
     text-align: center;
+    width:20rem;
+  }
+
+  .copyright {
+    display: flex;
+    flex-grow: 1;
   }
 
   .footer-title {
@@ -425,7 +452,7 @@ form {
         background-position: center;
         background-size: cover;
       padding: 1rem;
-      position: relative;
+      margin: auto;
     }
 
     .content {

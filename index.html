@@ -18,8 +18,8 @@
 
   <body>
       <header>
-        <section class="nav">
-          <nav>
+        <section>
+          <nav class="nav">
             <div class="img-and-title">
              <img class="logo" src="./images/Taylor-swift-burning-house.jpg" alt="Folklore era Taylor Swift in front of a burning house" />
               <div class="top-title">
@@ -78,7 +78,8 @@
          </div>
 
         <div class="streaming-data">
-         <h2>Streaming data</h2>
+          <div class="first-chunk-nest-right">
+         <h2 class="stream-title">Streaming data</h2>
          <table>
            <caption>Album streams on Spotify as of 03/10/2023, prioritising the most streamed edition of the album</caption>
            <thead>
@@ -123,6 +124,22 @@
         </table>
        </div>
        
+       <h2 class="records-section">Taylor doesn't just make records, she breaks them too!</h2>
+       <ul>
+        <li>After Swift (ages 17 at the time) released her single "Our Song" in 2006, she became the youngest artist in history to have written and performed a No. 1 song on the Hot Country Songs chart.</li>
+        <li>In 2010, Swift became the youngest artist ever to receive the album of the year award with (for my personal favourite albunm) "Fearless."</li>
+        <li>When Taylor Swift took home the Grammy for album of the year for "1989" (soon to be re-released as 1989 - Taylor's verion, with new tracks from the vault) in 2016, she became the first woman to ever win the coveted award twice.</li>
+        <li>Taylor Swift holds the record for most No. 1 hits on Billboard's US Digital Song Sales chart.</li>
+        <li>At the 2021 Grammy Awards, Swift became the first woman to win album of the year three times.</li>
+        <li>Swift has been nominated for song of the year more times than any other female artist in Grammys history.</li>
+        <li>Following the release of "Red (Taylor's Version)," Swift broke Shania Twain's record for the most weeks at No. 1 on the Billboard Top Country Albums Chart.</li>
+        <li>Taylor Swift's "All Too Well (10 Minute Version)" is the longest song in history to go No. 1.</li>
+        <li>Swift has broken the record for the most-streamed album in a single day in Spotify history several times, topping herself most recently with Midnights knocking Red (Taylor's Version) out of #1.</li>
+        <li>Swift is the only artist in history to claim all top ten entries on the Billboard Hot 100 in a single week.</li>
+        <li>HONORABLE MENTION: Spotify temporarily crashed when Taylor Swift dropped her latest (completely new) album "Midnights."</li>
+       </ul>
+      </div>
+
       </div>
       </section>
 
@@ -130,32 +147,32 @@
         <div class="doc-three-to-six">
 
             <div class="_1989-doc">
-                <img src="./images/1989.jpg" alt="1989 Word Tour Poster" class="_1989-doc-img" class="_1989-doc-img"/>
+                <img src="./images/1989.jpg" alt="1989 Word Tour Poster" class="_1989-doc-img"/>
                <h3 class="_1989-doc-title">The 1989 Word Tour Live (2015)</h3> 
                <p class="_1989-doc-para">Another recording of her tour but this time it includes commentary. The commentary comes from   Swift and her friends and one of the highlights of this documentary is when she talks about all of the guests she brought out on stage during the tour's run including Mick Jagger and Alanis Morisette.</p>
             </div> 
 
             <div class="rep-doc">
-              <img src="./images/rep.jpg" alt="Reputation Stadium Tour Poster" class="rep-doc-img"class="rep-doc-img" />
+              <img src="./images/rep.jpg" alt="Reputation Stadium Tour Poster" class="rep-doc-img" />
                <h3   class="rep-doc-title">Taylor Swift: Reputation Stadium Tour (2018)</h3>
                <p class="rep-doc-para">A recording of her Reputation Tour concert, still available on Netflix today.</p>
             </div>
 
             <div class="lover-doc">
-                <img src="./images/lover.jpg" alt="City of Lover Concert Poster" class="lover-doc-img" class="lover-doc-img"/>
+                <img src="./images/lover.jpg" alt="City of Lover Concert Poster" class="lover-doc-img"/>
                <h3 class="lover-doc-title">Taylor Swift: City of Lover Concert (February 2020)</h3> 
                <p class="lover-doc-para">This short film is a concert with some accoustic songs and some more ubeat pop songs.</p>
             </div> 
 
             <div class="folklore-doc">
-                <img src="./images/folklore.jpg" alt="Folklore: The Long Pond Studio Sessions Poster" class="folklore-doc-img" class="folklore-doc-img"/>
+                <img src="./images/folklore.jpg" alt="Folklore: The Long Pond Studio Sessions Poster" class="folklore-doc-img" />
                <h3 class="folklore-doc-title">Folklore: The Long Pond Studio Sessions (November 2020)</h3> 
                <p class="folklore-doc-para">Mostly a documentaty following a live recording of her album 'folklore', but this documentary also has some scenes of conversations betwen herself and her collaboratorsd on the project Jack Antanoff (of Bleachers) and Aaron Dessner (of Big Red Machine).</p>
            </div> 
         </div>
 
            <div class="miss-americana-doc">
-            <img src="./images/Miss-Americana.jpg" alt="Miss Americana Poster" class="miss-americana-doc-img" class="miss-americana-doc-img" />
+            <img src="./images/Miss-Americana.jpg" alt="Miss Americana Poster"  class="miss-americana-doc-img" />
            <h3 class="miss-americana-doc-title">Miss Americana (January 2020)</h3> 
            <p class="miss-americana-doc-para">A documentary with no live performances included takes a deeper look on Taylor's life, career, family, politics. This documentary also gets into some heavier and more personal subjects such as Swift's eating disorder and her sexual assault trial in 2017.</p>
         </div>
@@ -164,7 +181,7 @@
        </section>
 
        <section>
-        <div cla="whole-form">
+        <div class="whole-form">
           <h2 class="form-title">Which album is your favourite?</h2>
             <form action="#">
               <fieldset>
@@ -185,29 +202,26 @@
               </fieldset>
 
               <fieldset>
-              <label for="email">Email</label>
-              <input
-                autocomplete="email"
-                required
-                type="email"
-                id="email"
-                placeholder="taylorallisonswift13@swiftieland.com" />
-              
-              <label for="name">Name</label>
-                <input
-                autocomplete="name"
-                id="name"
-                type="text"
-                placeholder="Taylor" />
-
-              <label for="tel">Phone Number</label>
-                <input
-                autocomplete="tel"
-                id="tel"
-                type="tel"
-                placeholder="1312198913" />
+                <label for="email">Email</label>
+                  <input
+                    autocomplete="email"
+                    required
+                    type="email"
+                    id="email"
+                    placeholder="taylorallisonswift13@swiftieland.com" />
+                <label for="name">Name</label>
+                    <input
+                    autocomplete="name"
+                    id="name"
+                    type="text"
+                    placeholder="Taylor" />
+                <label for="tel">Phone Number</label>
+                    <input
+                    autocomplete="tel"
+                    id="tel"
+                    type="tel"
+                    placeholder="1312198913" />
               </fieldset>
-
               <button type="submit">Submit your choice and register for our newsletter</button>
           </form>
         </div>
@@ -215,83 +229,85 @@
       </main>
 
       <section>
-      <footer>
-        <div class="footer-grid">
-
-          <div class="ranked-title-and-albums-nav">
-            <h2 class="footer-title">Ranked - Taylor's Version</h2>
-            <nav>
-              <div class="footer-albums">
-              <h3>The Albums</h3>
-              <ul>
-                <li><a href="#">Taylor Swift</a></li>
-                <li><a href="#">Fearless - TV</a></li>
-                <li><a href="#">Speak Now - TV</a></li>
-                <li><a href="#">Red - TV</a></li>
-                <li><a href="#">1989</a></li>
-                <li><a href="#">Reputation</a></li>
-                <li><a href="#">Lover</a></li>
-                <li><a href="#">Folklore</a></li>
-                <li><a href="#">Evermore</a></li>
-                <li><a href="#">Midnights</a></li>
-              </ul>
+        <footer>
+          <div class="footer-grid">
+            <div class="ranked-title-and-albums-nav">
+              <h2 class="footer-title">Ranked - Taylor's Version</h2>
+                <nav>
+                  <div class="footer-albums">
+                    <h3>The Albums</h3>
+                      <ul>
+                        <li><a href="#">Taylor Swift</a></li>
+                        <li><a href="#">Fearless - TV</a></li>
+                        <li><a href="#">Speak Now - TV</a></li>
+                        <li><a href="#">Red - TV</a></li>
+                        <li><a href="#">1989</a></li>
+                        <li><a href="#">Reputation</a></li>
+                        <li><a href="#">Lover</a></li>
+                        <li><a href="#">Folklore</a></li>
+                        <li><a href="#">Evermore</a></li>
+                        <li><a href="#">Midnights</a></li>
+                      </ul>
+                  </div>
+                </nav>
+                <p class="copyright">© 2023</p>
             </div>
-            </nav>
+
+            <div class="container">
+              <div class="content">
+                <p>Are you to be back in Style?!</p>
+                <h2><span>1989 Taylor's Version</span> Coming Soon ...</h2>
+                  <div class="_1989-taylors-version-timer">
+                    <div>
+                      <p id="days">00</p>
+                      <span>Days</span>
+                    </div>
+                    <div>
+                      <p id="hours">00</p>
+                      <span>Hours</span>
+                    </div>
+                    <div>
+                      <p id="minutes">00</p>
+                      <span>Minutes</span>
+                    </div>
+                    <div>
+                      <p id="seconds">00</p>
+                      <span>Seconds</span>
+                    </div>
+                  </div>
+              </div>
+
+                    <script>
+                      var countDownDate = new Date("Oct 27, 2023 00:00:00").getTime();
+                      var x= setInterval(function(){
+                        var now = new Date().getTime();
+                        var distance = countDownDate -now;
+
+                        var Days = Math.floor(distance / (1000 * 60 * 60 * 24))
+                        var Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 *60));
+                        var Minutes = Math.floor((distance % (100 * 60 *60)) / (1000 * 60));
+                        var Seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("days").innerHTML = Days;
+                        document.getElementById("hours").innerHTML = Hours;
+                        document.getElementById("minutes").innerHTML = Minutes;
+                        document.getElementById("seconds").innerHTML = Seconds;
+
+                        if(distance < 0){
+                          clearInterval(x);
+                          document.getElementById("days").innerHTML = "00";
+                        document.getElementById("hours").innerHTML = "00";
+                        document.getElementById("minutes").innerHTML = "00";
+                        document.getElementById("seconds").innerHTML = "00";
+                        }
+                      },1000); 
+                    </script>
+             </div>
          </div>
-
-        <div class="container">
-
-          <div class="content">
-            <p>Are you to be back in Style?!</p>
-            <h2><span>1989 Taylor's Version</span> Coming Soon ...</h2>
-            <div class="_1989-taylors-version-timer">
-              <div>
-                <p id="days">00</p>
-                <span>Days</span>
-              </div>
-              <div>
-                <p id="hours">00</p>
-                <span>Hours</span>
-              </div>
-              <div>
-                <p id="minutes">00</p>
-                <span>Minutes</span>
-              </div>
-              <div>
-                <p id="seconds">00</p>
-                <span>Seconds</span>
-              </div>
-            </div>
-          </div>
-
-        <script>
-          var countDownDate = new Date("Oct 27, 2023 00:00:00").getTime();
-          var x= setInterval(function(){
-            var now = new Date().getTime();
-            var distance = countDownDate -now;
-
-            var Days = Math.floor(distance / (1000 * 60 * 60 * 24))
-            var Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 *60));
-            var Minutes = Math.floor((distance % (100 * 60 *60)) / (1000 * 60));
-            var Seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerHTML = Days;
-            document.getElementById("hours").innerHTML = Hours;
-            document.getElementById("minutes").innerHTML = Minutes;
-            document.getElementById("seconds").innerHTML = Seconds;
-
-            if(distance < 0){
-              clearInterval(x);
-              document.getElementById("days").innerHTML = "00";
-             document.getElementById("hours").innerHTML = "00";
-             document.getElementById("minutes").innerHTML = "00";
-             document.getElementById("seconds").innerHTML = "00";
-            }
-          },1000); 
-        </script>
-        </div>
-      </footer>
-    </section>
+        </footer>
+      </section>
+      
+    
     <!--
 
       LIST ANY CITATIONS HERE
