@@ -42,23 +42,41 @@ body {
 
 .nav-album-links {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 1rem;
+  grid-gap: 1rem;
+  text-align: center;
 }
 
 .first-chunk {
-  border: solid black;
   display: flex;
+  align-self: center;
   justify-content: space-between;
   text-align: center;
   margin: 0 2rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid black;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.streaming-data {
-  width: 45%;
-  border: blueviolet solid;
+.ranking {
+  height: fit-content;
+  text-align: left;
+  background: linear-gradient(0deg, #d8b464, #dcbeab, #c5c5c5, #adc1d0, #21acc6, #7d387e, #aa261f, #fbb4e1, #2c2539, #000000);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 > {
+  text-align: center;
 }
 
 .first-chunk-nest {
@@ -66,32 +84,73 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   width: 50%;
-  border: solid green;
-}
-
-.ranking {
-  border: red solid;
-  height: fit-content;
-  text-align: left;
 }
 
 .doc-one-and-two {
-  border: blue solid;
-  text-align: left;
-  justify-content: center;
+  text-align: center;
+  justify-self: center;
   align-items: center;
+  padding: 0.5rem;
 }
 
 .fearless-doc-img {
-  width: 30%;
+  display: block;
+  padding: 0.15rem;
+  height: 8rem;
+  border: dotted 7px #f6ed95;
+}
+
+.fearless-doc-title {
+  background: linear-gradient(0deg, #bb8f67, #c39977, #c3b377, #ddc477, #f6ed95);
+  color: rgb(93, 71, 6);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.fearless-img-and-title {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  align-content: center;
+}
+
+.fearless-doc-para {
+  text-align: center;
+  background-color: #d8b464;
+  color: rgb(253, 252, 178);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .speak-now-doc-img {
   width: 100%;
+  margin-top: 3rem;
+  display: block;
+  padding: 0.15rem;
+  border: dotted 7px #7d387e;
+  align-self: center;
+}
+
+.speak-now-doc-title {
+  background: linear-gradient(0deg, #7d5ac9, #9d6cde, #ba6cde, #d76cde, #ef81da);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.speak-now-doc-para {
+  text-align: center;
+  background-color: #7d387e;
+  color: #B1B7FBff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 ol {
-  list-style: none;
   text-align: left;
 }
 
@@ -99,63 +158,180 @@ ol {
   text-align: center;
 }
 
+.streaming-data {
+  width: 30%;
+  color: rgb(66, 5, 106);
+  padding-left: 2rem;
+  margin-top: 8rem;
+}
+
+caption {
+  margin-bottom: 2rem;
+}
+
+table, th, td {
+  border: solid #B04EF2ff;
+  color: rgb(66, 5, 106);
+}
+
 .doc-three-to-six {
-  border: solid #B2ECFFff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  margin-top: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 ._1989-doc {
   overflow-wrap: break-word;
-  border: solid #B2ECFFff;  
   text-align: left;
+  border-right: dotted black;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
 ._1989-doc-img{
-  display: flex;
-  width: 50%;
+  width: 100%;
+  margin-top: 3rem;
+  display: block;
+  padding: 0.15rem;
+  align-self: center;
+}
+
+._1989-doc-title {
+  background: linear-gradient(0deg, #B1B7FBff, #d17edc, #d8b6db, #9dbbce, #e2e5b5);
+  padding: 0.5rem;
+  color: #B04EF2ff;
+  border-radius: 0.5rem; 
+  text-align: center;
+}
+
+._1989-doc-para {
+  text-align: center;
+  background-color: #d17edc;
+  color: #B1B7FBff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .rep-doc {
-  border: solid #B2ECFFff;
   text-align: left;
+  border-right: dotted black;
+  padding: 0.5rem;
 }
 
 .rep-doc-img{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 100%;
+  margin-top: 3rem;
+  display: block;
+  padding: 0.15rem;
+  align-self: center;
+}
+
+.rep-doc-title {
+  background: linear-gradient(0deg, #981919, #755e5e, #463c3c, #1d1c1c, #000000);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.rep-doc-para {
+  text-align: center;
+  background-color: #981919;
+  color: #B1B7FBff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .lover-doc {
-  border: solid #B2ECFFff;
   text-align: left;
+  border-right: dotted black;
+  padding: 0.5rem;
 }
 
 .lover-doc-img{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 100%;
+  margin-top: 3rem;
+  display: block;
+  padding: 0.15rem;
+  align-self: center;
+}
+
+.lover-doc-title {
+  background: linear-gradient(0deg, #f079d9, #f262c8, #ca93f0, #5d57f2, #f4fdaa);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.lover-doc-para {
+  text-align: center;
+  background-color: #f262c8;
+  color: #B1B7FBff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .folklore-doc {
-  border: solid #B2ECFFff;
   text-align: left;
+  padding: 0.5rem;
 }
 
 .folklore-doc-img{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 100%;
+  margin-top: 3rem;
+  display: block;
+  padding: 0.15rem;
+  align-self: center;
+}
+
+.folklore-doc-title {
+  background: linear-gradient(0deg, #7d5ac9, #9d6cde, #ba6cde, #d76cde, #ef81da);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.folklore-doc-para {
+  text-align: center;
+  background-color: #7d387e;
+  color: #B1B7FBff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .miss-americana-doc {
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
+  border-top: dotted black;
+  border-bottom: dotted black;
+  padding: 0.5rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .miss-americana-doc-img{
   width: 50%;
+}
+
+.miss-americana-doc-title {
+  background: linear-gradient(0deg, #7d5ac9, #9d6cde, #ba6cde, #d76cde, #ef81da);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.miss-americana-doc-para {
+  text-align: center;
+  background-color: #7d387e;
+  color: #B1B7FBff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
