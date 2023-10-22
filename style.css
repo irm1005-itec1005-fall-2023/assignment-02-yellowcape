@@ -75,10 +75,6 @@ h1 {
   text-align: center;
 }
 
-h1 > {
-  text-align: center;
-}
-
 .first-chunk-nest {
   display: flex;
   flex-direction: column;
@@ -91,6 +87,7 @@ h1 > {
   justify-self: center;
   align-items: center;
   padding: 0.5rem;
+  color: rgb(66, 5, 106);
 }
 
 .fearless-doc-img {
@@ -291,7 +288,7 @@ table, th, td {
 }
 
 .folklore-doc-title {
-  background: linear-gradient(0deg, #7d5ac9, #9d6cde, #ba6cde, #d76cde, #ef81da);
+  background: linear-gradient(0deg, #2e2e2e, #353535, #7f7f7f, #bababa, #ffffff);
   padding: 0.5rem;
   border-radius: 0.5rem;
   text-align: center;
