@@ -339,7 +339,43 @@ table, th, td {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  
+  height: 300px;
+  width: 300px;
+  background-image: url(images/1989\ tv.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  position: relative;
+}
+
+.content {
+  color: rgb(167, 4, 4);
+  font-weight: 600;
+}
+
+.content h2 {
+  color: rgb(167, 4, 4);
+  -webkit-text-stroke-color: rgb(31, 5, 5);
+  -webkit-text-stroke-width: 1px;
+  font-size: 25px;
+  font-weight:600;
+}
+
+.content h2 span{
+  color: rgb(118, 162, 174);
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+}
+
+._1989-taylors-version-timer {
+  display: flex;
+}
+
+._1989-taylors-version-timer div{
+  flex-basis: 100px;
+}
+
+._1989-taylors-version-timer div p{
+  font-size: 50px;
+  margin-bottom: -8px;
 }

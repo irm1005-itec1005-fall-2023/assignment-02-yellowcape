@@ -136,8 +136,8 @@
             </div> 
 
             <div class="rep-doc">
-                <img src="./images/rep.jpg" alt="Reputation Stadium Tour Poster" class="rep-doc-img"class="rep-doc-img" />
-               <h3 class="rep-doc-title">Taylor Swift: Reputation Stadium Tour (2018)</h3>
+              <img src="./images/rep.jpg" alt="Reputation Stadium Tour Poster" class="rep-doc-img"class="rep-doc-img" />
+               <h3   class="rep-doc-title">Taylor Swift: Reputation Stadium Tour (2018)</h3>
                <p class="rep-doc-para">A recording of her Reputation Tour concert, still available on Netflix today.</p>
             </div>
 
@@ -232,7 +232,42 @@
         </nav>
 
         <div class="container">
-        <script src="script.js"></script>
+
+          <div class="content">
+            <p>Ready to be back in Style?!</p>
+            <h2><span>1989 Taylor's Version</span> Coming Soon ...</h2>
+            <div class="_1989-taylors-version-timer">
+              <div>
+                <p>00</p>
+                <span>Days</span>
+              </div>
+              <div>
+                <p>00</p>
+                <span>Hours</span>
+              </div>
+              <div>
+                <p>00</p>
+                <span>Minutes</span>
+              </div>
+              <div>
+                <p>00</p>
+                <span>Seconds</span>
+              </div>
+            </div>
+          </div>
+
+        <script>
+          var countDownDate = new Date("Oct 27, 2023 00:00:00").getTime();
+          var x= setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate -now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24))
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 *60));
+            var Minutes = Math.floor ((distance % (100 * 60 *60)) / (1000 * 60));
+
+          },1000); 
+        </script>
       </footer>
     </section>
     <!--
